@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@digitallinguistics/transliterate':
+        specifier: ^0.4.1
+        version: 0.4.1
+      nepali-input-react:
+        specifier: ^0.1.0
+        version: 0.1.0(react@18.2.0)
       plasmo:
         specifier: 0.89.4
         version: 0.89.4(@swc/core@1.10.9(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)(lodash@4.17.21)(postcss@8.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -17,6 +23,9 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
+      transliteration-extension:
+        specifier: 'file:'
+        version: file:(@swc/core@1.10.9(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)(lodash@4.17.21)(postcss@8.5.1)
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: 4.1.1
@@ -112,6 +121,10 @@ packages:
   '@babel/types@7.26.7':
     resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
+
+  '@digitallinguistics/transliterate@0.4.1':
+    resolution: {integrity: sha512-Pv6E+LmHXqvCSbH5etL8ooFleA7zlbSNPsKcvr+UluXD1Junpxlkpb+wJYkmMQNJ9/yKK7/sxu81Cl5uM3Y15g==}
+    engines: {node: '>=20.x'}
 
   '@esbuild/android-arm64@0.18.20':
     resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
@@ -2441,6 +2454,12 @@ packages:
     engines: {node: '>= 4.4.x'}
     hasBin: true
 
+  nepali-input-react@0.1.0:
+    resolution: {integrity: sha512-ZX8uWXjJPNURVlecSe+btrDq5q+0ah6R3TrvAZFYcz4TnkUOpcyfnMQ3VSgY9o+a3yTtk7hQvOmgUC8qevmwaw==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+
   node-abi@3.73.0:
     resolution: {integrity: sha512-z8iYzQGBu35ZkTQ9mtR8RqugJZ9RCLn8fv3d7LsgDBzOijGQP3RdKTX4LA7LXw03ZhU5z0l4xfhIMgSES31+cg==}
     engines: {node: '>=10'}
@@ -2917,6 +2936,9 @@ packages:
   tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
 
+  'transliteration-extension@file:':
+    resolution: {directory: '', type: directory}
+
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
@@ -3160,6 +3182,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@digitallinguistics/transliterate@0.4.1': {}
 
   '@esbuild/android-arm64@0.18.20':
     optional: true
@@ -5739,6 +5763,10 @@ snapshots:
       sax: 1.4.1
     optional: true
 
+  nepali-input-react@0.1.0(react@18.2.0):
+    dependencies:
+      react: 18.2.0
+
   node-abi@3.73.0:
     dependencies:
       semver: 7.5.4
@@ -6319,6 +6347,70 @@ snapshots:
   tr46@1.0.1:
     dependencies:
       punycode: 2.3.1
+
+  transliteration-extension@file:(@swc/core@1.10.9(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)(lodash@4.17.21)(postcss@8.5.1):
+    dependencies:
+      nepali-input-react: 0.1.0(react@18.2.0)
+      plasmo: 0.89.4(@swc/core@1.10.9(@swc/helpers@0.5.15))(@swc/helpers@0.5.15)(lodash@4.17.21)(postcss@8.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/helpers'
+      - arc-templates
+      - atpl
+      - babel-core
+      - bare-buffer
+      - bracket-template
+      - coffeescript
+      - cssnano
+      - dot
+      - eco
+      - ect
+      - ejs
+      - haml-coffee
+      - hamlet
+      - hamljs
+      - handlebars
+      - hogan.js
+      - htmling
+      - jazz
+      - jqtpl
+      - just
+      - liquid
+      - liquor
+      - lodash
+      - marko
+      - mote
+      - mustache
+      - nunjucks
+      - plates
+      - postcss
+      - pug
+      - purgecss
+      - qejs
+      - ractive
+      - razor-tmpl
+      - relateurl
+      - slm
+      - squirrelly
+      - srcset
+      - supports-color
+      - teacup
+      - templayed
+      - terser
+      - then-pug
+      - tinyliquid
+      - toffee
+      - ts-node
+      - twig
+      - twing
+      - uncss
+      - underscore
+      - vash
+      - velocityjs
+      - walrus
+      - whiskers
 
   tree-kill@1.2.2: {}
 

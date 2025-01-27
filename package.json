@@ -10,6 +10,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@digitallinguistics/transliterate": "^0.4.1",
     "nepali-input-react": "^0.1.0",
     "plasmo": "0.89.4",
     "react": "18.2.0",
